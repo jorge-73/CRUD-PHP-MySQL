@@ -8,8 +8,9 @@
     <div class="col-md-4">
 
       <?php if(isset($_SESSION['mensaje'])) { ?>
-        <div class="alert alert-<?php $_SESSION['tipo_mensaje'] ?>" role="alert">
-            <?php $_SESSION['mensaje'] ?>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <?php $_SESSION['mensaje']?>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       <?php } ?>
       <div class="card card-body">
